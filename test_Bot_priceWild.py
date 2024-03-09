@@ -8,7 +8,7 @@ from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from dataBase_class import *
 
 # Инициализация бота и диспетчера
-API_TOKEN = '6713739731:AAHQ1w_T1YUX1awv1jSJtAfqAO5ZpUsuQ0w'  # Замените на свой токен
+API_TOKEN = 'your token'  # Замените на свой токен
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
 logging.basicConfig(level=logging.INFO)
