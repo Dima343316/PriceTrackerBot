@@ -6,10 +6,14 @@ import logging
 import aiohttp
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from dataBase_class import *
+from dotenv import load_dotenv
+import os
 
+
+load_dotenv()
 # Инициализация бота и диспетчера
 API_TOKEN = 'your token'  # Замените на свой токен
-bot = Bot(token=API_TOKEN)
+bot = Bot(os.getenv.('TOKEN'))
 dp = Dispatcher(bot)
 logging.basicConfig(level=logging.INFO)
 dp.middleware.setup(LoggingMiddleware())
